@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vehicle-service-backend
+    env: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /api/dashboard/stats
+    envVars:
+      - key: PORT
+        value: 8085
